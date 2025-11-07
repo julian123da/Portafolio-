@@ -43,7 +43,6 @@ img {
   object-fit: cover;
 }
 
-/* NAVBAR */
 header {
   position: fixed;
   top: 0;
@@ -104,7 +103,6 @@ header {
   width: 100%;
 }
 
-/* SECTIONS */
 section {
   padding: 6rem 2rem;
   max-width: 1400px;
@@ -147,7 +145,6 @@ section {
   box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
 }
 
-/* HERO */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -231,7 +228,6 @@ section {
   box-shadow: 0 0 30px rgba(108, 99, 255, .5);
 }
 
-/* EXPERIENCIA */
 .timeline {
   position: relative;
   max-width: 800px;
@@ -309,7 +305,6 @@ section {
   border-radius: 20px;
 }
 
-/* PROYECTOS */
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -388,7 +383,6 @@ section {
   color: var(--primary-color);
 }
 
-/* CONTACTO */
 .contacto {
   text-align: center;
 }
@@ -398,7 +392,6 @@ section {
   margin-bottom: 1.5rem;
 }
 
-/* FOOTER */
 footer {
   background-color: var(--darker-bg);
   border-top: 1px solid var(--border-color);
@@ -413,7 +406,6 @@ footer {
   margin: 0 auto;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column;
