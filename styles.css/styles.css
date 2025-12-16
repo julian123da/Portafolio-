@@ -1,11 +1,11 @@
 :root {
-  --primary-color: #6c63ff;
-  --dark-bg: #f6f7fb;
-  --darker-bg: #eef0f6;
-  --card-bg: #ffffff;
-  --light-text: #1f2937;
-  --gray-text: #6b7280;
-  --border-color: #e5e7eb;
+  --primary-color: #5b7cff;
+  --dark-bg: #edf0ff;
+  --darker-bg: #e6ebff;
+  --card-bg: #f9faff;
+  --light-text: #1e293b;
+  --gray-text: #475569;
+  --border-color: #dbe2ff;
   --transition: all .3s ease;
 }
 
@@ -48,7 +48,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(249, 250, 255, 0.9);
   backdrop-filter: blur(10px);
   z-index: 100;
   border-bottom: 1px solid var(--border-color);
@@ -133,16 +133,16 @@ section {
   background-color: var(--primary-color);
   color: #ffffff;
   padding: .8rem 1.5rem;
-  border-radius: 5px;
+  border-radius: 8px;
   font-weight: 600;
   transition: var(--transition);
   border: none;
 }
 
 .btn:hover {
-  background-color: #5a54e0;
+  background-color: #4a68f0;
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(108, 99, 255, 0.25);
+  box-shadow: 0 10px 24px rgba(91, 124, 255, 0.3);
 }
 
 .hero {
@@ -220,7 +220,7 @@ section {
   height: 360px;
   border-radius: 50%;
   border: 5px solid var(--primary-color);
-  box-shadow: 0 0 22px rgba(108, 99, 255, .3);
+  box-shadow: 0 0 22px rgba(91, 124, 255, .3);
   transition: var(--transition);
 }
 
@@ -264,14 +264,14 @@ section {
 .timeline-content {
   background-color: var(--card-bg);
   padding: 1.5rem;
-  border-radius: 10px;
-  border-left: 3px solid var(--primary-color);
+  border-radius: 12px;
+  border-left: 4px solid var(--primary-color);
 }
 
 .date {
   display: inline-block;
   padding: .3rem .8rem;
-  background-color: rgba(108, 99, 255, 0.15);
+  background-color: rgba(91, 124, 255, 0.15);
   color: var(--primary-color);
   border-radius: 5px;
   font-size: .9rem;
@@ -312,7 +312,7 @@ section {
 
 .project-card {
   background-color: var(--card-bg);
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
   transition: var(--transition);
   height: 100%;
@@ -321,8 +321,8 @@ section {
 }
 
 .project-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 14px 32px rgba(108, 99, 255, .25);
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(91, 124, 255, .25);
 }
 
 .project-img img {
@@ -392,7 +392,7 @@ section {
 }
 
 footer {
-  background-color: #fafafa;
+  background-color: #f1f3ff;
   border-top: 1px solid var(--border-color);
   padding: 2rem 5%;
 }
