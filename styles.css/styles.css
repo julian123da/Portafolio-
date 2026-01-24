@@ -442,3 +442,44 @@ footer {
     padding: 4rem 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  .hero-image img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .timeline {
+    padding-left: 0;
+  }
+
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline-item {
+    padding-left: 0;
+  }
+
+  .timeline-item::before {
+    display: none;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+a:focus,
+button:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 4px;
+}
