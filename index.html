@@ -3,192 +3,410 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | Julian Acevedo - Desarrollador Web</title>
+    <title>Julian Acevedo — Desarrollador Web</title>
     <meta name="description" content="Portafolio profesional de Julian Acevedo, desarrollador web junior.">
-    <link rel="stylesheet" href="./styles.css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2193d055c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css/styles.css">
 </head>
 <body>
+ 
 
-<header>
+<div id="progress-bar"></div>
+ 
+
+<div id="cursor-glow"></div>
+ 
+
+<header id="header">
     <nav id="navbar">
-        <div class="logo">Julian<span>Acevedo</span></div>
-        <ul class="nav-links">
+        <div class="logo">Julian<span>.</span></div>
+        <ul class="nav-links" id="nav-links">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
+        <a href="#contacto" class="nav-cta">Trabajemos juntos</a>
+        <div class="hamburger" id="hamburger" onclick="toggleNav()">
+            <span></span><span></span><span></span>
+        </div>
     </nav>
 </header>
+ 
 
-<main>
-
-<section id="inicio" class="hero">
+<section id="inicio">
+    <div class="hero-bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+ 
     <div class="hero-content">
         <div class="hero-text">
-            <h1>Julian Acevedo</h1>
-            <h2>Desarrollador Web Junior</h2>
-            <p>
-                Apasionado por crear experiencias web únicas y funcionales.
-                Siempre buscando aprender nuevas tecnologías y mejorar mis habilidades.
+            <div class="hero-badge">
+                <span class="dot"></span>
+                Disponible para proyectos
+            </div>
+ 
+            <h1 class="hero-title">
+                Julian<br>
+                <span class="gradient-word">Acevedo</span>
+            </h1>
+ 
+            <p class="hero-subtitle">
+                Desarrollador Web Junior apasionado por crear experiencias digitales
+                únicas, funcionales y visualmente impactantes. Siempre aprendiendo,
+                siempre construyendo.
             </p>
-
-            <div class="social-links">
-                <a href="https://github.com/julian123da" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/julian-acevedo-228799314/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/__julvn__/" target="_blank"><i class="fab fa-instagram"></i></a>
+ 
+            <div class="hero-actions">
+                <a href="#proyectos" class="btn-primary">
+                    Ver proyectos <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contacto" class="btn-ghost">
+                    <i class="fas fa-envelope"></i> Contáctame
+                </a>
             </div>
-
-            <a href="#contacto" class="btn">Contáctame</a>
-        </div>
-
-        <div class="hero-image">
-            <img src="./img/yo.jpeg" alt="Foto de perfil de Julian Acevedo">
-        </div>
-    </div>
-</section>
-
-<section id="experiencia" class="experiencia">
-    <h2 class="section-title">Experiencia Académica</h2>
-
-    <div class="timeline">
-
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <span class="date">2025 - Actualidad</span>
-                <h3>Tecnico en Software</h3>
-                <h4>Campuslands</h4>
-                <p>
-                    Desarrollé un portafolio web personal utilizando HTML, CSS y JavaScript,
-                    donde muestro mis habilidades y proyectos. También creé un sitio web responsive,
-                    optimizado para distintos dispositivos, fortaleciéndome en diseño web moderno
-                    y experiencia de usuario.
-                </p>
-                <ul class="skills">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
+ 
+            <div class="hero-socials">
+                <a href="https://github.com/julian123da" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/julian-acevedo-228799314/" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/__julvn__/" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <span class="date">2025 - Actualidad</span>
-                <h3>Prácticas o proyectos del técnico</h3>
-                <h4>Campuslands</h4>
-                <p>
-                    Participación en proyectos colaborativos durante el técnico en desarrollo de software.
-                </p>
-                <ul class="skills">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>MongoDB</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <span class="date">2025 - Actualidad</span>
-                <h3>En formación</h3>
-                <h4>Campuslands</h4>
-                <p>
-                    Actualmente en proceso de formación técnica y desarrollo de proyectos personales relacionados con software.
-                </p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<section id="proyectos" class="projects">
-    <h2 class="section-title">Proyectos Personales</h2>
-
-    <div class="projects-container">
-
-        <div class="project-card">
-            <div class="project-img">
-                <img src="./img/kario.png" alt="Proyecto de gestión de tareas">
-            </div>
-            <div class="project-info">
-                <h3>App de gestión de tareas</h3>
-                <p>Aplicación diseñada para gestionar diferentes tareas.</p>
-                <div class="project-tech">
-                    <span>HTML</span>
-                    <span>CSS</span>
+ 
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-num">3<span>+</span></div>
+                    <div class="stat-label">Proyectos completados</div>
                 </div>
-                <div class="project-links">
-                    <a href="https://github.com/SamuelMogollon/PROYECTO-FILTRO_MogollonSamuel-AcevedoJulian.git" target="_blank">
+                <div class="stat-item">
+                    <div class="stat-num">4<span>+</span></div>
+                    <div class="stat-label">Tecnologías dominadas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">1<span>año</span></div>
+                    <div class="stat-label">En formación activa</div>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="hero-photo-wrap">
+            <div class="hero-photo-ring"></div>
+            <img src="./img/yo.jpeg" alt="Julian Acevedo" class="hero-photo">
+            <div class="hero-chip hero-chip-1">
+                <i class="fas fa-code"></i> Frontend Dev
+            </div>
+            <div class="hero-chip hero-chip-2">
+                <i class="fab fa-js"></i> JavaScript
+            </div>
+        </div>
+    </div>
+ 
+    <div class="scroll-hint">
+        <div class="mouse"><div class="wheel"></div></div>
+        <span>Scroll</span>
+    </div>
+</section>
+ 
+
+<div class="marquee-section">
+    <div class="marquee-track" id="marquee">
+        <div class="marquee-item"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="marquee-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+        <div class="marquee-item"><i class="fab fa-js"></i> JavaScript</div>
+        <div class="marquee-item"><i class="fas fa-database"></i> MongoDB</div>
+        <div class="marquee-item"><i class="fab fa-git-alt"></i> Git</div>
+        <div class="marquee-item"><i class="fab fa-github"></i> GitHub</div>
+        <div class="marquee-item"><i class="fas fa-mobile-alt"></i> Responsive</div>
+        <div class="marquee-item"><i class="fas fa-paint-brush"></i> UI Design</div>
+       
+        <div class="marquee-item"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="marquee-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+        <div class="marquee-item"><i class="fab fa-js"></i> JavaScript</div>
+        <div class="marquee-item"><i class="fas fa-database"></i> MongoDB</div>
+        <div class="marquee-item"><i class="fab fa-git-alt"></i> Git</div>
+        <div class="marquee-item"><i class="fab fa-github"></i> GitHub</div>
+        <div class="marquee-item"><i class="fas fa-mobile-alt"></i> Responsive</div>
+        <div class="marquee-item"><i class="fas fa-paint-brush"></i> UI Design</div>
+    </div>
+</div>
+ 
+
+<section id="experiencia">
+    <div class="section-label">Trayectoria</div>
+    <h2 class="section-title">Experiencia<br><em>Académica</em></h2>
+    <p class="section-subtitle">Mi camino en el desarrollo de software, paso a paso, construyendo habilidades reales.</p>
+ 
+    <div class="exp-grid">
+        <div class="exp-card featured reveal">
+            <div class="exp-date">2025 — Actualidad</div>
+            <div class="exp-title">Técnico en Desarrollo de Software</div>
+            <div class="exp-org">Campuslands</div>
+            <div class="exp-desc">
+                Desarrollé un portafolio web personal utilizando HTML, CSS y JavaScript donde muestro
+                mis habilidades y proyectos. También creé sitios web responsivos optimizados para
+                distintos dispositivos, fortaleciéndome en diseño web moderno y experiencia de usuario.
+            </div>
+            <div class="tag-list">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Diseño Responsive</span>
+                <span class="tag">UX/UI</span>
+            </div>
+        </div>
+ 
+        <div class="exp-card reveal">
+            <div class="exp-date">2025 — Actualidad</div>
+            <div class="exp-title">Proyectos Colaborativos</div>
+            <div class="exp-org">Campuslands</div>
+            <div class="exp-desc">
+                Participación en proyectos colaborativos durante el técnico, trabajando en equipo
+                con control de versiones y bases de datos NoSQL.
+            </div>
+            <div class="tag-list">
+                <span class="tag">MongoDB</span>
+                <span class="tag">Git</span>
+                <span class="tag">Trabajo en equipo</span>
+            </div>
+        </div>
+ 
+        <div class="exp-card reveal">
+            <div class="exp-date">2025 — Actualidad</div>
+            <div class="exp-title">Proyectos Personales</div>
+            <div class="exp-org">Autoaprendizaje</div>
+            <div class="exp-desc">
+                Actualmente en proceso de formación técnica y desarrollo de proyectos personales
+                para reforzar y ampliar los conocimientos adquiridos.
+            </div>
+            <div class="tag-list">
+                <span class="tag">Autoaprendizaje</span>
+                <span class="tag">Proyectos personales</span>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+
+<section id="proyectos">
+    <div class="section-label">Portafolio</div>
+    <h2 class="section-title">Proyectos<br><em>Personales</em></h2>
+    <p class="section-subtitle">Una selección de trabajos que reflejan mis habilidades y mi evolución como desarrollador.</p>
+ 
+    <div class="projects-grid">
+ 
+        <div class="project-card reveal">
+            <div class="project-img-wrap">
+                <img src="./img/kario.png" alt="App de gestión de tareas">
+                <div class="project-overlay"></div>
+                <div class="project-num">01</div>
+            </div>
+            <div class="project-body">
+                <h3 class="project-title">App de Gestión de Tareas</h3>
+                <p class="project-desc">Aplicación diseñada para gestionar diferentes tareas de forma eficiente y visual.</p>
+                <div class="project-footer">
+                    <div class="tag-list">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                    <a href="https://github.com/SamuelMogollon/PROYECTO-FILTRO_MogollonSamuel-AcevedoJulian.git" target="_blank" class="project-link">
                         <i class="fab fa-github"></i> Código
                     </a>
                 </div>
             </div>
         </div>
-
-        <div class="project-card">
-            <div class="project-img">
-                <img src="./img/plataforma.png" alt="Proyecto web de gestión de tareas diarias">
+ 
+        <div class="project-card reveal">
+            <div class="project-img-wrap">
+                <img src="./img/plataforma.png" alt="Plataforma de gestión diaria">
+                <div class="project-overlay"></div>
+                <div class="project-num">02</div>
             </div>
-            <div class="project-info">
-                <h3>Plataforma de gestión diaria</h3>
-                <p>Aplicación diseñada para gestionar diferentes tareas día a día.</p>
-                <div class="project-tech">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/julian123da/PROYECTO-JavaScript_AcevedoJulian_WilliamArdila.git" target="_blank">
+            <div class="project-body">
+                <h3 class="project-title">Plataforma de Gestión Diaria</h3>
+                <p class="project-desc">Aplicación para gestionar tareas del día a día con interfaz moderna e intuitiva.</p>
+                <div class="project-footer">
+                    <div class="tag-list">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
+                    </div>
+                    <a href="https://github.com/julian123da/PROYECTO-JavaScript_AcevedoJulian_WilliamArdila.git" target="_blank" class="project-link">
                         <i class="fab fa-github"></i> Código
                     </a>
                 </div>
             </div>
         </div>
-
-        <div class="project-card">
-            <div class="project-img">
-                <img src="./img/Mongo.png" alt="Proyecto base de datos MongoDB">
+ 
+        <div class="project-card reveal">
+            <div class="project-img-wrap">
+                <img src="./img/Mongo.png" alt="Base de datos estudiantil">
+                <div class="project-overlay"></div>
+                <div class="project-num">03</div>
             </div>
-            <div class="project-info">
-                <h3>Base de datos de gestión estudiantil</h3>
-                <p>Aplicación que gestiona estudiantes, administradores y trabajadores de sedes.</p>
-                <div class="project-tech">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>MongoDB</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/luis-angel-gelvez-delgado/Proyecto_mongoDB2_AcevedoJulian_GelvezLuis.git" target="_blank">
+            <div class="project-body">
+                <h3 class="project-title">BD de Gestión Estudiantil</h3>
+                <p class="project-desc">Sistema que gestiona estudiantes, administradores y trabajadores de sedes con MongoDB.</p>
+                <div class="project-footer">
+                    <div class="tag-list">
+                        <span class="tag">JS</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                    <a href="https://github.com/luis-angel-gelvez-delgado/Proyecto_mongoDB2_AcevedoJulian_GelvezLuis.git" target="_blank" class="project-link">
                         <i class="fab fa-github"></i> Código
                     </a>
                 </div>
             </div>
         </div>
-
+ 
     </div>
 </section>
+ 
 
-<section id="contacto" class="contacto">
-    <h2 class="section-title">Contáctame</h2>
-    <a href="mailto:julianacevedo@example.com" class="btn">Enviar correo</a>
+<section id="contacto">
+    <div class="contact-inner reveal">
+        <div class="contact-icon">
+            <i class="fas fa-paper-plane"></i>
+        </div>
+        <h2 class="contact-title">¡Hablemos!</h2>
+        <p class="contact-desc">
+            ¿Tienes un proyecto en mente o quieres colaborar? Estoy abierto a nuevas
+            oportunidades y siempre dispuesto a aprender y crecer.
+        </p>
+ 
+        <div class="contact-email-box" onclick="copyEmail()">
+            <i class="fas fa-envelope"></i>
+            <span id="email-text">julianacevedo@example.com</span>
+            <button class="copy-btn" id="copy-btn">Copiar</button>
+        </div>
+ 
+        <div class="contact-socials">
+            <a href="https://github.com/julian123da" target="_blank" class="social-btn">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/julian-acevedo-228799314/" target="_blank" class="social-btn">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://www.instagram.com/__julvn__/" target="_blank" class="social-btn">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </div>
 </section>
-
-</main>
+ 
 
 <footer>
-    <div class="footer-content">
-        <p>&copy; 2025 Julian Acevedo - Todos los derechos reservados</p>
-        <div class="social-links">
-            <a href="https://github.com/julian123da" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/julian-acevedo-228799314/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/__julvn__/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <div class="footer-inner">
+        <p class="footer-copy">© 2025 Julian Acevedo</p>
+        <div class="footer-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
         </div>
     </div>
 </footer>
+ 
+<script>
+  
+    const glow = document.getElementById('cursor-glow');
+    document.addEventListener('mousemove', e => {
+        glow.style.left = e.clientX + 'px';
+        glow.style.top  = e.clientY + 'px';
+    });
+ 
+    
+    const bar = document.getElementById('progress-bar');
+    window.addEventListener('scroll', () => {
+        const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+        bar.style.width = pct + '%';
+    });
+ 
+    
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+        header.classList.toggle('scrolled', window.scrollY > 40);
+    });
+ 
+    
+    function toggleNav() {
+        document.getElementById('nav-links').classList.toggle('open');
+    }
+    document.querySelectorAll('.nav-links a').forEach(a => {
+        a.addEventListener('click', () => document.getElementById('nav-links').classList.remove('open'));
+    });
+ 
 
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => entry.target.classList.add('visible'), 100);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+ 
+    document.querySelectorAll('.reveal').forEach((el, i) => {
+        el.style.transitionDelay = (i % 3) * 0.1 + 's';
+        observer.observe(el);
+    });
+ 
+   
+    function copyEmail() {
+        const email = 'julianacevedo@example.com';
+        navigator.clipboard.writeText(email).then(() => {
+            const btn = document.getElementById('copy-btn');
+            btn.textContent = '¡Copiado!';
+            btn.classList.add('copied');
+            setTimeout(() => {
+                btn.textContent = 'Copiar';
+                btn.classList.remove('copied');
+            }, 2500);
+        });
+    }
+ 
+ 
+    const roles = ['Desarrollador Web', 'Frontend Dev', 'Estudiante Campuslands', 'Creador de UI'];
+    let ri = 0, ci = 0, deleting = false;
+    const badge = document.querySelector('.hero-badge');
+ 
+    function typeRole() {
+        const role = roles[ri];
+        if (!deleting) {
+            badge.innerHTML = `<span class="dot"></span> ${role.substring(0, ci + 1)}`;
+            ci++;
+            if (ci === role.length) { deleting = true; setTimeout(typeRole, 1800); return; }
+        } else {
+            badge.innerHTML = `<span class="dot"></span> ${role.substring(0, ci - 1)}`;
+            ci--;
+            if (ci === 0) { deleting = false; ri = (ri + 1) % roles.length; }
+        }
+        setTimeout(typeRole, deleting ? 45 : 90);
+    }
+    typeRole();
+ 
+   
+    document.querySelectorAll('.project-card').forEach(card => {
+        card.addEventListener('mousemove', e => {
+            const r = card.getBoundingClientRect();
+            const x = (e.clientX - r.left) / r.width  - 0.5;
+            const y = (e.clientY - r.top)  / r.height - 0.5;
+            card.style.transform = `translateY(-8px) rotateY(${x*6}deg) rotateX(${-y*4}deg)`;
+            card.style.transformStyle = 'preserve-3d';
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = '';
+        });
+    });
+</script>
 </body>
 </html>
+ 
